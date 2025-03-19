@@ -1,0 +1,21 @@
+// Exercício 5 - Gerenciamento de Investimentos
+abstract class Investimento {
+    protected double valor;
+    
+    public Investimento(double valor) {
+        this.valor = valor;
+    }
+    
+    public abstract double calcularRetorno();
+}
+
+class InvestimentoRendaFixa extends Investimento {
+    public InvestimentoRendaFixa(double valor) {
+        super(valor);
+    }
+    
+    @Override
+    public double calcularRetorno() {
+        return valor * 1.05; // Simulação de 5% de retorno
+    }
+}
