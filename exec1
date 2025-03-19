@@ -1,0 +1,20 @@
+// Exercício 1 - Gerenciamento de Veículos
+abstract class Veiculo {
+    protected String marca;
+    protected String modelo;
+    
+    public Veiculo(String marca, String modelo) {
+        this.marca = marca;
+        this.modelo = modelo;
+    }
+    public abstract void acelerar();
+}
+class Carro extends Veiculo {
+    public Carro(String marca, String modelo) {
+        super(marca, modelo);
+    }
+    @Override
+    public void acelerar() {
+        System.out.println("O carro está acelerando");
+    }
+}
