@@ -1,0 +1,20 @@
+// Exercício 2 - Gerenciamento de Dispositivos Eletrônicos
+abstract class DispositivoEletronico {
+    protected String marca;
+    protected String modelo;
+    
+    public DispositivoEletronico(String marca, String modelo) {
+        this.marca = marca;
+        this.modelo = modelo;
+    }
+    public abstract void ligar();
+}
+class Smartphone extends DispositivoEletronico {
+    public Smartphone(String marca, String modelo) {
+        super(marca, modelo);
+    }
+    @Override
+    public void ligar() {
+        System.out.println("O smartphone está ligando");
+    }
+}
