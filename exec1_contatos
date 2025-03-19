@@ -1,0 +1,19 @@
+// Exercício 3 - Gerenciamento de Contatos
+interface Contato {
+    void exibirInformacoes();
+}
+
+class ContatoPessoal implements Contato {
+    private String nome;
+    private String telefone;
+    
+    public ContatoPessoal(String nome, String telefone) {
+        this.nome = nome;
+        this.telefone = telefone;
+    }
+    
+    @Override
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + nome + ", Telefone: " + telefone);
+    }
+}
