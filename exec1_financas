@@ -1,0 +1,17 @@
+// Exercício 4 - Gerenciamento de Finanças
+interface Financeiro {
+    void calcularSaldo();
+}
+
+class FinancasPessoais implements Financeiro {
+    private double saldo;
+    
+    public FinancasPessoais(double saldoInicial) {
+        this.saldo = saldoInicial;
+    }
+    
+    @Override
+    public void calcularSaldo() {
+        System.out.println("Saldo atual: R$" + saldo);
+    }
+}
